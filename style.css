@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+  color: white;
+}
+html {
+  font-size: 62.5%;
+}
+.icon {
+  filter: drop-shadow(0px 0px 50px white);
+}
+.link a {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.link a:hover {
+  color: rgb(98, 161, 216);
+}
+body {
+  background-color: #10100f;
+  /* height: 100vh; */
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5.5rem;
+  gap: 2.7rem;
+  margin-bottom: 8rem;
+}
+.icon img {
+  max-width: 5rem;
+  height: 5rem;
+}
+.link {
+  display: flex;
+  gap: 3rem;
+}
+.nav {
+  text-decoration: none;
+  color: #000;
+}
+.image-ref {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  column-gap: 14.5rem;
+  margin: 6.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17.4rem;
+}
+.image-ref img {
+  max-width: 100%;
+  border-radius: 15rem;
+  filter: drop-shadow(0px 0px 26px #cbbafd);
+  transition: 0.3s;
+}
+
+/* .ref {
+  display: flex;
+  justify-content: center;
+  gap: 14.5rem;
+} */
+.git {
+  filter: drop-shadow(0px 0px 80px #cbbafd);
+}
+.git img {
+  max-width: 100%;
+}
+
+.insta {
+  filter: drop-shadow(0px 0px 80px #cbbafd);
+}
+.insta img {
+  max-width: 100%;
+}
+.major {
+  filter: drop-shadow(0px 0px 80px #cbbafd);
+}
+.major img {
+  max-width: 100%;
+}
+.main-body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 10rem;
+  margin-right: 7.5rem;
+  justify-content: center;
+}
+.skill {
+  height: 35rem;
+  margin-left: 2.5rem;
+  padding: 4rem;
+  border-radius: 3.5rem;
+  box-shadow: 0 5px 25px #cbbafd;
+}
+.skills {
+  font-size: 2rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  line-height: 2.5rem;
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><path d="M21 12 5 21V3l16 9z"></path></svg>');
+}
+.skills p {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about-me {
+  box-shadow: 0px 5px 25px #cbbafd;
+  padding: 7.5rem;
+  border-radius: 3.5rem;
+}
+.about-me h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+hr {
+  margin-bottom: 2.5rem;
+}
+.about-me p {
+  line-height: 5rem;
+  font-size: 3rem;
+  margin: 2.5rem;
+}
+footer {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 9.6rem;
+}
+footer hr {
+  margin-bottom: 5rem;
+  max-width: 100%;
+}
+.container {
+  opacity: 0;
+  animation: loading 0.5s ease-in 0.5s forwards;
+}
+.header {
+  opacity: 0;
+  animation: loading 0.5s ease-in 0.5s forwards;
+}
+.image-ref {
+  opacity: 0;
+  animation: loading 1s ease-in 1s forwards;
+}
+.main-body {
+  opacity: 0;
+  animation: loading 1.5s ease-in 1.5s forwards;
+}
+footer {
+  opacity: 0;
+  animation: loading 2s ease-in 2s forwards;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.git {
+  transition: 0.3s;
+}
+.insta {
+  transition: 0.3s;
+}
+.major {
+  transition: 0.3s;
+}
+
+.image-ref:hover > .git:not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.image-ref:hover > .insta:not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.image-ref:hover > .major:not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.icon {
+  -webkit-transition: -webkit-transform 1s;
+}
+.icon:hover {
+  -webkit-transform: rotate(360deg) translateZ(0);
+}
